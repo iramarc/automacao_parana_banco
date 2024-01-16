@@ -24,10 +24,11 @@ Na segunda fase, os objetivos foram mais avançados, envolvendo validação de v
 
 ## Como Executar os Testes
 
-1. Clone o repositório: `git clone //github.com/LucasProjobs/Teste-E2E_Front_e_API.V1.git`
+1. Clone o repositório: `git clone //github.com/iramarc/automacao_parana_banco.git`
 2. Instale as dependências: `npm install`
 3. Instale as dependências: `npm install ajv`
-4. Execute os testes: `npx cypress run` ou `npx cypress open`
+4. instale as dependências: `npm install cypress --save-dev`
+5. Execute os testes: `npx cypress run` ou `npx cypress open`
 
 ## Autor
 
