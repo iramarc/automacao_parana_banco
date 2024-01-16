@@ -1,0 +1,3 @@
+cypress/e2e/Testes de API/validaçao.spec.js
+cypress/e2e/Testes de API/validacaoJsonSchema.spec.js
+cypress/screenshots/Testes de API/validacaoJsonSchema.cy.js/Valida o JSON com o JSON Schema -- Deve validar o JSON baseado no Schema determinado (failed).png
