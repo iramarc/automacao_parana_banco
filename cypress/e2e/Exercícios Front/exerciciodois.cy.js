@@ -1,16 +1,16 @@
 const botoes = require("./elementos");
-const urlteste = require("./sites");
+const urlteste = require("./sites"); // Variavel de chamada do site urlteste
 
-const tabelaficticia = 'div[class="large-10 columns"]';
+const tabelaficticia = 'div[class="large-10 columns"]'; // variavel usada apenas no exercicio dois
 const corpodatabela = '<tbody>';
 
 
 describe('Teste de Automatização', () => {
     it('Deve clicar nos botões "Edit" e "Delete" em cada linha da tabela', () => {
-      cy.visit(urlteste); //Visita o website através do URL
+      cy.visit(urlteste); //requisitando a abertura do website através do URL
 
       /*1º A seguir buscamos pela divisão (div) da classe determinada para a tabela
-      para encontrar onde estão os elementos que queremos.
+      para encontrar onde estão os elementos.
 
       2º Usamos o "each($div)" para repetir sobre todos os elementos encontrados pelo get determinado
       e referenciar cada "div" correspondente como "$div"
