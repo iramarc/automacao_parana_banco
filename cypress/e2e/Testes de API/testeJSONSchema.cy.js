@@ -18,7 +18,7 @@ addformats(ajv) //importa a opção que valida formatos.
                 throw new Error(`JSON does not match the schema. Errors: ${ajv.errorsText(validate.errors)}`);
             } 
             //se a validação falhar, vai lançar uma mensagem de erro detalhada sobre os erros de validação
-            //usando a função específica da biblioteca para isso.
+            //usando a função específica da biblioteca para isso, caso contrario retorna o HTTP Code 200.
             });
         });
     });
