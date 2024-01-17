@@ -1,4 +1,4 @@
-const apiUrls = require('./Facilitadores/urls');
+const apiUrls = require('./Facilitadores/urls'); //solicito uma pasta externa
 
 describe('Teste do verbo HTTP "DELETE"', () => {
 
