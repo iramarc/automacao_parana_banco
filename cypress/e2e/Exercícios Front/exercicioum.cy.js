@@ -7,10 +7,11 @@ describe('Página de teste', () => {
     
     cy.visit(urlteste);  //Visitar a página atraves do URL.
     
-      /* Pelo motivo de: os botões mudam de forma dinâmica, é impossivel trazer algum indicador fixo como ID,
-      portanto usamos "get" para buscar pela âncora "a", a referencia html "href", da classe determinada
-      para o botão botão (onde cada um tem o seu).
-      Chegando assim à clicar no botão independente da nomenclatura ou do ID trocado */
+      /* Pelos botões mudarem de forma dinâmica é impossivel trazer algum indicador fixo como ID,
+      portanto usei a lógica de criar uma pasta (elementos.js), onde dentro dela usei o seguinte:
+      "get" para buscar pela âncora "a", a referencia html "class", onde cada botão tem a sua classe,
+      sendo assim, cada botão se torna independente mesmo alterando os elementos Dinâmicos */
+    
       cy.get(botoes.botao1).click();
       cy.get(botoes.botao2).click();
       cy.get(botoes.botao3).click();
